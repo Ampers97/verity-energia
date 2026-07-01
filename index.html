@@ -1,0 +1,939 @@
+
+<!DOCTYPE html>
+<html lang="pl" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO: PODSTAWOWE ===== -->
+    <title>Verity Energia — Niezależne doradztwo w optymalizacji kosztów energii dla MŚP</title>
+    <meta name="description" content="Verity Energia — niezależne doradztwo energetyczne dla mikro, małych i średnich firm w Polsce. Mierzalne oszczędności bez prowizji od sprzedawców energii. Płacisz tylko wtedy, gdy oszczędzasz.">
+    <meta name="keywords" content="optymalizacja kosztów energii, doradztwo energetyczne MŚP, obniżenie rachunków za prąd, analiza faktury energetycznej, konsultant energetyczny Kraków, Polska">
+    <meta name="author" content="Verity Energia">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.verityenergia.pl/">
+
+    <!-- ===== SEO: OPEN GRAPH (Facebook, LinkedIn) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.verityenergia.pl/">
+    <meta property="og:title" content="Verity Energia — Niezależne doradztwo w optymalizacji kosztów energii dla MŚP">
+    <meta property="og:description" content="Pomagamy mikro, małym i średnim firmom realnie obniżyć koszty energii elektrycznej — bez inwestycji w sprzęt, bez prowizji od sprzedawców energii. Płacisz tylko wtedy, gdy oszczędzasz.">
+    <meta property="og:image" content="https://www.verityenergia.pl/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="Verity Energia">
+
+    <!-- ===== SEO: TWITTER / X CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Verity Energia — Niezależne doradztwo energetyczne dla MŚP">
+    <meta name="twitter:description" content="Pomagamy firmom realnie obniżyć koszty energii — płacisz tylko gdy oszczędzasz.">
+    <meta name="twitter:image" content="https://www.verityenergia.pl/og-image.jpg">
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314213D'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-size='20' font-weight='700' fill='%2300B8A9' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314213D'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-size='20' font-weight='700' fill='%2300B8A9' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+
+    <!-- ===== CZCIONKI ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- ===== SCHEMA.ORG JSON-LD ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Verity Energia",
+      "url": "https://www.verityenergia.pl",
+      "logo": "https://www.verityenergia.pl/logo.jpg",
+      "image": "https://www.verityenergia.pl/og-image.jpg",
+      "description": "Niezależne doradztwo w optymalizacji kosztów energii elektrycznej dla MŚP w Polsce.",
+      "slogan": "Niezależne doradztwo. Mierzalne oszczędności.",
+      "priceRange": "success fee od oszczędności",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Polska"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kraków",
+        "addressRegion": "Małopolska",
+        "addressCountry": "PL"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "kontakt@verityenergia.pl",
+        "contactType": "customer service",
+        "availableLanguage": "Polish"
+      },
+      "sameAs": []
+    }
+    </script>
+
+    <style>
+        :root {
+            --color-ink: #14213D;
+            --color-paper: #FAF9F6;
+            --color-accent-teal: #00B8A9;
+            --color-accent-amber: #E8A33D;
+            --color-graphite: #2B2D33;
+            --color-line: #DEDAD1;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --font-mono: 'IBM Plex Mono', monospace;
+            --max-width: 1200px;
+            --section-pad: 100px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-body);
+            font-size: 17px;
+            line-height: 1.65;
+            color: var(--color-graphite);
+            background: var(--color-paper);
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; display: block; }
+        a { color: var(--color-accent-teal); text-decoration: none; transition: opacity .2s; }
+        a:hover { opacity: .8; }
+        a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+            outline: 2px solid var(--color-accent-teal);
+            outline-offset: 3px;
+        }
+
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+        .eyebrow {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: var(--color-accent-teal);
+            margin-bottom: 12px;
+        }
+        .section-divider { border: none; border-top: 1px solid var(--color-line); margin: 0; }
+        .section { padding: var(--section-pad) 0; }
+
+        .header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(250,249,246,.92);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--color-line);
+        }
+        .header .container {
+            display: flex; align-items: center; justify-content: space-between;
+            height: 64px;
+        }
+        .logo { display: inline-flex; align-items: center; }
+        .logo-img { height: 38px; width: auto; display: block; object-fit: contain; }
+        .nav { display: flex; gap: 24px; list-style: none; }
+        .nav a { font-size: 14px; color: var(--color-graphite); font-weight: 500; min-height: 44px; display: flex; align-items: center; }
+        .nav a:hover { color: var(--color-accent-teal); opacity: 1; }
+        .nav-toggle { display: none; background: none; border: none; cursor: pointer; min-width: 44px; min-height: 44px; padding: 10px; flex-direction: column; justify-content: center; align-items: center; }
+        .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--color-ink); margin: 5px 0; transition: .3s; }
+
+        .hero { padding-top: 140px; padding-bottom: var(--section-pad); }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(36px, 5vw, 60px);
+            font-weight: 700;
+            color: var(--color-ink);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+        .hero-sub {
+            font-size: 18px;
+            color: var(--color-graphite);
+            margin-bottom: 32px;
+            max-width: 540px;
+        }
+        .hero-ctas { display: flex; flex-wrap: wrap; gap: 16px; }
+
+        .btn {
+            display: inline-block; padding: 14px 28px; border-radius: 6px;
+            font-family: var(--font-body); font-weight: 600; font-size: 15px;
+            cursor: pointer; min-height: 44px; border: none; transition: transform .15s, box-shadow .15s;
+        }
+        .btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+        .btn-primary { background: var(--color-accent-amber); color: #fff; }
+        .btn-secondary { background: transparent; border: 1.5px solid var(--color-ink); color: var(--color-ink); }
+
+        .calculator {
+            background: var(--color-ink);
+            border-radius: 12px;
+            padding: 36px 32px;
+            color: #fff;
+        }
+        .calculator h3 {
+            font-family: var(--font-display);
+            font-size: 18px; font-weight: 700; margin-bottom: 20px;
+        }
+        .calc-label { font-size: 14px; margin-bottom: 8px; opacity: .8; display: block; }
+        .calc-input-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+        .calc-input {
+            width: 100%; padding: 12px 14px; border-radius: 6px;
+            border: 1px solid rgba(255,255,255,.2);
+            background: rgba(255,255,255,.07);
+            color: #fff; font-family: var(--font-mono); font-size: 18px;
+        }
+        .calc-slider {
+            width: 100%; margin: 12px 0 24px;
+            -webkit-appearance: none; appearance: none;
+            height: 4px; background: rgba(255,255,255,.15); border-radius: 2px;
+        }
+        .calc-slider::-webkit-slider-thumb {
+            -webkit-appearance: none; width: 18px; height: 18px;
+            background: var(--color-accent-teal); border-radius: 50%; cursor: pointer;
+        }
+        .calc-slider::-moz-range-thumb {
+            width: 18px; height: 18px;
+            background: var(--color-accent-teal); border-radius: 50%; cursor: pointer; border: none;
+        }
+        .calc-result-label { font-size: 13px; opacity: .7; margin-bottom: 4px; }
+        .calc-result {
+            font-family: var(--font-mono); font-size: 30px; font-weight: 500;
+            color: var(--color-accent-teal);
+        }
+        .calc-disclaimer {
+            font-size: 12px; opacity: .5; margin-top: 16px; line-height: 1.4;
+        }
+
+        .text-section { max-width: 720px; }
+        .text-section h2 {
+            font-family: var(--font-display); font-size: clamp(28px, 3.5vw, 40px);
+            color: var(--color-ink); margin-bottom: 20px; font-weight: 700;
+        }
+
+        .benefits h2, .audience h2, .pricing h2, .process h2, .cases h2, .faq h2 {
+            font-family: var(--font-display); font-size: clamp(28px, 3.5vw, 40px);
+            color: var(--color-ink); margin-bottom: 40px; font-weight: 700;
+        }
+        .benefits-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .benefit-card {
+            border: 1px solid var(--color-line); border-radius: 8px;
+            padding: 28px; transition: border-color .2s;
+        }
+        .benefit-card:hover { border-color: var(--color-accent-teal); }
+        .benefit-card h3 {
+            font-family: var(--font-display); font-size: 18px; font-weight: 700;
+            color: var(--color-ink); margin-bottom: 8px;
+        }
+        .benefit-card p { font-size: 15px; opacity: .85; }
+
+        .audience-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+        .audience-card {
+            background: var(--color-ink); color: #fff; border-radius: 10px; padding: 32px;
+        }
+        .audience-card h3 {
+            font-family: var(--font-display); font-size: 20px; font-weight: 700; margin-bottom: 10px;
+        }
+        .audience-card p { font-size: 15px; opacity: .8; }
+
+        .pricing-intro { max-width: 720px; margin-bottom: 40px; font-size: 16px; }
+        .pricing-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .pricing-card {
+            border: 1px solid var(--color-line); border-radius: 10px;
+            padding: 36px 32px; transition: border-color .2s;
+        }
+        .pricing-card:hover { border-color: var(--color-accent-teal); }
+        .pricing-card-name {
+            font-family: var(--font-display); font-size: 20px; font-weight: 700;
+            color: var(--color-ink); margin-bottom: 4px;
+        }
+        .pricing-card-segment {
+            font-family: var(--font-mono); font-size: 13px; color: var(--color-accent-teal);
+            margin-bottom: 24px;
+        }
+        .pricing-card-row {
+            display: flex; justify-content: space-between; align-items: baseline;
+            border-bottom: 1px solid var(--color-line);
+            padding: 12px 0;
+        }
+        .pricing-card-row:last-child { border-bottom: none; }
+        .pricing-card-label { font-size: 14px; opacity: .7; }
+        .pricing-card-value {
+            font-family: var(--font-mono); font-size: 16px; font-weight: 500;
+            color: var(--color-ink);
+        }
+        .pricing-note {
+            margin-top: 24px; font-size: 13px; max-width: 760px; opacity: .7;
+            line-height: 1.6;
+        }
+
+        .process-steps {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+            position: relative;
+        }
+        .process-steps::before {
+            content: ''; position: absolute; top: 32px; left: 64px; right: 64px;
+            height: 1px; background: var(--color-line); z-index: 0;
+        }
+        .step { text-align: center; position: relative; padding: 0 12px; }
+        .step-num {
+            width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 18px;
+            display: grid; place-items: center;
+            background: var(--color-ink); color: #fff;
+            font-family: var(--font-mono); font-size: 16px; font-weight: 500;
+            position: relative; z-index: 1;
+        }
+        .step h3 {
+            font-family: var(--font-display); font-size: 18px; font-weight: 700;
+            color: var(--color-ink); margin-bottom: 8px;
+        }
+        .step p { font-size: 15px; opacity: .85; }
+
+        .cases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+        .case-card {
+            border: 1px solid var(--color-line); border-radius: 8px; padding: 32px;
+            font-size: 16px; line-height: 1.7;
+        }
+
+        .faq-list { max-width: 760px; }
+        .faq-item { border-bottom: 1px solid var(--color-line); }
+        .faq-question {
+            width: 100%; padding: 20px 0; background: none; border: none;
+            text-align: left; cursor: pointer; font-family: var(--font-body);
+            font-size: 16px; font-weight: 600; color: var(--color-ink);
+            display: flex; justify-content: space-between; align-items: center;
+            min-height: 44px;
+        }
+        .faq-question::after {
+            content: '+'; font-size: 24px; line-height: 1; color: var(--color-accent-teal);
+        }
+        .faq-item.open .faq-question::after { content: '−'; }
+        .faq-answer {
+            max-height: 0; overflow: hidden; transition: max-height .25s ease;
+        }
+        .faq-item.open .faq-answer { max-height: 200px; }
+        .faq-answer p { padding-bottom: 20px; }
+
+        .contact {
+            background: var(--color-ink); color: #fff;
+            padding: var(--section-pad) 0;
+        }
+        .contact h2 {
+            font-family: var(--font-display); font-size: clamp(28px, 3.5vw, 40px);
+            font-weight: 700; margin-bottom: 12px;
+        }
+        .contact-sub { opacity: .8; margin-bottom: 40px; max-width: 560px; }
+        .form-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+            max-width: 640px;
+        }
+        .form-field { display: flex; flex-direction: column; }
+        .form-field.full { grid-column: 1 / -1; }
+        .form-field label {
+            font-size: 13px; font-weight: 500; margin-bottom: 6px; opacity: .8;
+        }
+        .form-field input, .form-field textarea {
+            padding: 12px 14px; border-radius: 6px;
+            border: 1px solid rgba(255,255,255,.15);
+            background: rgba(255,255,255,.06);
+            color: #fff; font-family: var(--font-body); font-size: 15px;
+        }
+        .form-field textarea { resize: vertical; min-height: 90px; }
+        .form-field input::placeholder, .form-field textarea::placeholder { color: rgba(255,255,255,.35); }
+        .file-upload {
+            border: 2px dashed rgba(255,255,255,.2); border-radius: 8px;
+            padding: 28px; text-align: center; cursor: pointer; transition: border-color .2s;
+        }
+        .file-upload:hover { border-color: var(--color-accent-teal); }
+        .file-upload input { display: none; }
+        .file-upload-text { font-size: 14px; opacity: .7; }
+        .file-upload-text strong { color: var(--color-accent-teal); opacity: 1; }
+        .form-submit { margin-top: 24px; }
+        .form-disclaimer { font-size: 12px; opacity: .5; margin-top: 16px; max-width: 640px; }
+        .form-message { margin-top: 16px; font-size: 15px; display: none; }
+        .form-message.success { color: var(--color-accent-teal); display: block; }
+        .form-message.error { color: var(--color-accent-amber); display: block; }
+
+        .footer {
+            border-top: 1px solid rgba(255,255,255,.1);
+            background: var(--color-ink); color: rgba(255,255,255,.6);
+            padding: 40px 0; text-align: center; font-size: 14px;
+        }
+        .footer a { color: rgba(255,255,255,.7); }
+        .footer-links { margin-top: 8px; }
+        .footer-links a { margin: 0 8px; }
+
+        .reveal {
+            opacity: 0; transform: translateY(24px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            .reveal { opacity: 1; transform: none; transition: none; }
+        }
+
+        @media (max-width: 1024px) {
+            .hero .container { grid-template-columns: 1fr; gap: 40px; }
+            .process-steps { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+            .process-steps::before { display: none; }
+        }
+        @media (max-width: 768px) {
+            :root { --section-pad: 64px; }
+            .nav { display: none; flex-direction: column; position: absolute;
+                top: 64px; left: 0; right: 0; background: var(--color-paper);
+                padding: 24px; gap: 16px; border-bottom: 1px solid var(--color-line);
+            }
+            .nav.open { display: flex; }
+            .nav-toggle { display: block; }
+            .process-steps { grid-template-columns: 1fr; }
+            .form-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 375px) {
+            .hero h1 { font-size: 30px; }
+            .calculator { padding: 24px 20px; }
+        }
+
+        @media (max-width: 600px) {
+            .hero-ctas {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .hero-ctas .btn {
+                text-align: center;
+                width: 100%;
+            }
+            .benefit-card,
+            .audience-card,
+            .case-card {
+                padding: 20px;
+            }
+            .pricing-card {
+                padding: 24px 20px;
+            }
+            .step {
+                text-align: left;
+                padding: 0;
+            }
+            .footer {
+                padding: 32px 16px;
+                font-size: 13px;
+            }
+            .footer-links a {
+                display: inline-block;
+                margin: 4px 6px;
+            }
+            .calculator {
+                padding: 24px 16px;
+                border-radius: 8px;
+            }
+            .calc-result {
+                font-size: 24px;
+            }
+            .form-field input,
+            .form-field textarea {
+                padding: 10px 12px;
+                font-size: 16px;
+            }
+            .file-upload {
+                padding: 20px;
+            }
+            .faq-question {
+                padding: 18px 0;
+            }
+        }
+
+        @media (max-width: 360px) {
+            :root { --section-pad: 48px; }
+            .hero { padding-top: 100px; }
+            .hero h1 { font-size: 26px; }
+            .container { padding: 0 16px; }
+            .btn {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            input, textarea, select {
+                font-size: 16px !important;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+            .audience-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .logo-img { height: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Przejdź do treści</a>
+
+<header class="header">
+    <div class="container">
+        <a href="#" class="logo" aria-label="Verity Energia — strona główna"><img src="LOGO_JPG_LUB_SVG" alt="Verity Energia" class="logo-img" width="160" height="40" loading="eager"></a>
+        <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav>
+            <ul class="nav" role="list">
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#rozwiazanie">Rozwiązanie</a></li>
+                <li><a href="#cennik">Cennik</a></li>
+                <li><a href="#proces">Proces</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content">
+<section class="hero section" id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Niezależne doradztwo.<br>Mierzalne oszczędności.</h1>
+            <p class="hero-sub">Pomagamy mikro, małym i średnim firmom w Polsce realnie obniżyć koszty energii elektrycznej — bez inwestycji w sprzęt, bez prowizji od sprzedawców energii. Płacisz tylko wtedy, gdy oszczędzasz.</p>
+            <div class="hero-ctas">
+                <a href="#kontakt" class="btn btn-primary">Sprawdź swoją fakturę za darmo</a>
+                <a href="#kontakt" class="btn btn-secondary">Umów bezpłatną konsultację</a>
+            </div>
+        </div>
+        <div class="calculator" aria-label="Kalkulator szacunkowych oszczędności">
+            <h3>Kalkulator oszczędności</h3>
+            <p class="calc-label">Twoja miesięczna faktura za energię (zł)</p>
+            <div class="calc-input-row">
+                <input type="number" class="calc-input" id="calcInput" inputmode="numeric" placeholder="np. 5000" min="500" max="30000" value="5000" aria-label="Kwota miesięcznej faktury w złotych">
+            </div>
+            <input type="range" class="calc-slider" id="calcSlider" min="500" max="30000" value="5000" step="100" aria-label="Suwak kwoty faktury">
+            <p class="calc-result-label">Szacowana roczna oszczędność:</p>
+            <div class="calc-result" id="calcResult" aria-live="polite">6 000 – 12 000 zł</div>
+            <p class="calc-disclaimer">Szacunek poglądowy (10–20% rocznych kosztów). Rzeczywista wartość zależy od indywidualnej analizy.</p>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="problem">
+    <div class="container">
+        <div class="text-section reveal">
+            <p class="eyebrow">Problem</p>
+            <h2>Twoja faktura za energię to czarna skrzynka</h2>
+            <p>Stawki, opłaty dystrybucyjne, moc umowna, kary za przekroczenia, opłaty handlowe — większość przedsiębiorców płaci tyle, ile wynikało z umowy podpisanej kilka lat temu, bez świadomości, że warunki mogły się od tego czasu znacząco zmienić.</p>
+            <br>
+            <p>Brokerzy energii często polecają oferty, z których sami mają prowizję. Duże firmy doradcze pomijają mikro i małe firmy jako zbyt mały kontrakt. Segment MŚP zostaje sam z fakturą, której nikt nie analizuje.</p>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="rozwiazanie">
+    <div class="container">
+        <div class="text-section reveal">
+            <p class="eyebrow">Rozwiązanie</p>
+            <h2>Niezależna analiza. Konkretne oszczędności.</h2>
+            <p>Verity Energia analizuje faktury, umowy i parametry rozliczeniowe, identyfikuje miejsca przepłat i negocjuje lepsze warunki w imieniu klienta — bez zmiany dostawcy i bez inwestycji w urządzenia.</p>
+            <br>
+            <p>Brak umów prowizyjnych z jakimkolwiek sprzedawcą energii — zarabiamy procent od oszczędności, które realnie wygenerujemy.</p>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="korzysci">
+    <div class="container reveal">
+        <p class="eyebrow">Dlaczego warto</p>
+        <div class="benefits">
+            <h2>Korzyści współpracy</h2>
+            <div class="benefits-grid" id="benefitsGrid"></div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="dlakogo">
+    <div class="container reveal">
+        <p class="eyebrow">Dla kogo</p>
+        <div class="audience">
+            <h2>Dla kogo pracujemy</h2>
+            <div class="audience-grid" id="audienceGrid"></div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="cennik">
+    <div class="container reveal">
+        <p class="eyebrow">Model wynagrodzenia</p>
+        <div class="pricing">
+            <h2>Płacisz głównie wtedy, gdy oszczędzasz</h2>
+            <p class="pricing-intro">Nie ukrywamy zasad współpracy. Poniższe widełki pokazują typowy zakres dla danej wielkości firmy — ostateczne warunki ustalamy indywidualnie po bezpłatnej analizie Twojej faktury.</p>
+            <div class="pricing-grid" id="pricingGrid"></div>
+            <p class="pricing-note">Success fee liczony jest od realnie wygenerowanych oszczędności, weryfikowanych na podstawie Twoich wcześniejszych faktur — nie od hipotetycznych cen rynkowych. Wstępna analiza jednej faktury jest zawsze bezpłatna i nie zobowiązuje do dalszej współpracy.</p>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="proces">
+    <div class="container reveal">
+        <p class="eyebrow">Jak to działa</p>
+        <div class="process">
+            <h2>Proces w 4 krokach</h2>
+            <div class="process-steps" id="processSteps"></div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="cases">
+    <div class="container reveal">
+        <p class="eyebrow">Rezultaty</p>
+        <div class="cases">
+            <h2>Przykłady efektów</h2>
+            <div class="cases-grid" id="casesGrid"></div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="faq">
+    <div class="container reveal">
+        <p class="eyebrow">Pytania i odpowiedzi</p>
+        <div class="faq">
+            <h2>FAQ</h2>
+            <div class="faq-list" id="faqList"></div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="kontakt">
+    <div class="container reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Sprawdźmy, ile możesz zaoszczędzić</h2>
+        <p class="contact-sub">Prześlij swoją fakturę za energię — odpowiemy w ciągu 48 godzin z bezpłatną wstępną oceną.</p>
+        <form id="contactForm" novalidate>
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="fname">Imię i nazwisko*</label>
+                    <input type="text" id="fname" name="fname" placeholder="Jan Kowalski" required>
+                </div>
+                <div class="form-field">
+                    <label for="company">Firma*</label>
+                    <input type="text" id="company" name="company" placeholder="Nazwa firmy" required>
+                </div>
+                <div class="form-field full">
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" placeholder="kontakt@firma.pl" required>
+                </div>
+                <div class="form-field full">
+                    <label>Załącz fakturę*</label>
+                    <div class="file-upload" id="fileUploadArea">
+                        <input type="file" id="fileInput" name="invoice" accept=".pdf,.jpg,.jpeg,.png" required>
+                        <div class="file-upload-text"><strong>Kliknij lub przeciągnij plik</strong><br>PDF, JPG lub PNG — maks. 10 MB</div>
+                    </div>
+                </div>
+                <div class="form-field full">
+                    <label for="message">Wiadomość</label>
+                    <textarea id="message" name="message" placeholder="Opisz krótko swoją sytuację..."></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Wyślij zapytanie</button>
+            <p class="form-disclaimer">Wysłanie formularza nie zobowiązuje do dalszej współpracy. Dane wykorzystamy wyłącznie do kontaktu w sprawie analizy.</p>
+            <div class="form-message" id="formMessage"></div>
+        </form>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p><strong>Verity Energia</strong> — Niezależne doradztwo. Mierzalne oszczędności.</p>
+        <div class="footer-links">
+            <a href="mailto:kontakt@verityenergia.pl">kontakt@verityenergia.pl</a> ·
+            <a href="tel:+48XXXXXXXXX">+48 XXX XXX XXX</a> ·
+            Małopolska, Polska
+        </div>
+        <div class="footer-links" style="margin-top:8px;">
+            <a href="/polityka-prywatnosci">Polityka prywatności</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+const BENEFITS_DATA = [
+    { title: "Zero ryzyka finansowego", desc: "Większość wynagrodzenia to success fee — płacisz tylko za realne oszczędności." },
+    { title: "Pełna niezależność", desc: "Żadnych prowizji od sprzedawców energii — doradzamy wyłącznie w interesie klienta." },
+    { title: "Bez inwestycji", desc: "Optymalizacja parametrów i warunków umowy, nie sprzętu." },
+    { title: "Specjalizacja w MŚP", desc: "Obsługujemy segment pomijany przez duże firmy doradcze." },
+    { title: "Szybki start", desc: "Pierwsza analiza w kilka dni, bezpłatnie." }
+];
+
+const AUDIENCE_DATA = [
+    { title: "Mikrofirmy (1–9 osób)", desc: "Sklepy, punkty usługowe, gastronomia — decyduje właściciel." },
+    { title: "Małe firmy (10–49 osób)", desc: "Restauracje, warsztaty, drukarnie — właściciel lub dyrektor operacyjny." },
+    { title: "Średnie firmy (50–249 osób)", desc: "Produkcja, chłodnie, logistyka — CFO lub dyrektor operacyjny." }
+];
+
+const PRICING_DATA = [
+    {
+        name: "MikroStart",
+        segment: "1–9 pracowników",
+        rows: [
+            { label: "Opłata wstępna", value: "0–400 zł" },
+            { label: "Success fee", value: "25% oszczędności" },
+            { label: "Okres rozliczenia", value: "12 miesięcy" }
+        ]
+    },
+    {
+        name: "SmallPro",
+        segment: "10–49 pracowników",
+        rows: [
+            { label: "Opłata wstępna", value: "1 200–2 000 zł" },
+            { label: "Success fee", value: "20% oszczędności" },
+            { label: "Okres rozliczenia", value: "12 miesięcy" }
+        ]
+    },
+    {
+        name: "MediumExpert",
+        segment: "50–249 pracowników",
+        rows: [
+            { label: "Opłata wstępna", value: "3 500–6 000 zł" },
+            { label: "Success fee", value: "15–18% oszczędności" },
+            { label: "Okres rozliczenia", value: "12 miesięcy" }
+        ]
+    }
+];
+
+const PROCESS_DATA = [
+    { num: "01", title: "Bezpłatna analiza", desc: "Przesyłasz fakturę, w kilka dni dostajesz wstępną ocenę." },
+    { num: "02", title: "Szczegółowy audyt", desc: "Pełna analiza umowy, taryfy, mocy umownej, opłat." },
+    { num: "03", title: "Negocjacje i optymalizacja", desc: "Weryfikacja i negocjacje ze sprzedawcą w imieniu klienta." },
+    { num: "04", title: "Mierzalny efekt", desc: "Raport z wdrożonymi zmianami i realnymi oszczędnościami." }
+];
+
+const CASES_DATA = [
+    { text: "Restauracja w Krakowie, 18 pracowników — po renegocjacji mocy umownej oszczędność rzędu kilkunastu procent rocznych kosztów energii, bez zmiany dostawcy." },
+    { text: "Betoniarnia, Mazowieckie — obniżka rachunku o 1500 zł miesięcznie po kompensacji mocy biernej." }
+];
+
+const FAQ_DATA = [
+    { q: "Czy muszę zmienić dostawcę energii?", a: "Nie, zwykle optymalizujemy warunki z obecnym dostawcą." },
+    { q: "Ile to kosztuje?", a: "Wstępna analiza bezpłatna, dalej głównie success fee od oszczędności." },
+    { q: "Skąd pewność niezależności?", a: "Brak prowizji od sprzedawców energii, wynagrodzenie tylko od klienta." },
+    { q: "Jak długo trwa proces?", a: "Wstępna analiza kilka dni, pełny audyt 2–6 tygodni." },
+    { q: "Czy obsługujecie firmy poza Małopolską?", a: "Tak, współpraca głównie zdalna." }
+];
+
+function renderBenefits() {
+    document.getElementById('benefitsGrid').innerHTML = BENEFITS_DATA.map(b => `
+        <div class="benefit-card">
+            <h3>${b.title}</h3>
+            <p>${b.desc}</p>
+        </div>
+    `).join('');
+}
+
+function renderAudience() {
+    document.getElementById('audienceGrid').innerHTML = AUDIENCE_DATA.map(a => `
+        <div class="audience-card">
+            <h3>${a.title}</h3>
+            <p>${a.desc}</p>
+        </div>
+    `).join('');
+}
+
+function renderPricing() {
+    document.getElementById('pricingGrid').innerHTML = PRICING_DATA.map(p => `
+        <div class="pricing-card">
+            <div class="pricing-card-name">${p.name}</div>
+            <div class="pricing-card-segment">${p.segment}</div>
+            ${p.rows.map(r => `
+                <div class="pricing-card-row">
+                    <span class="pricing-card-label">${r.label}</span>
+                    <span class="pricing-card-value">${r.value}</span>
+                </div>
+            `).join('')}
+        </div>
+    `).join('');
+}
+
+function renderProcess() {
+    document.getElementById('processSteps').innerHTML = PROCESS_DATA.map(s => `
+        <div class="step">
+            <div class="step-num">${s.num}</div>
+            <h3>${s.title}</h3>
+            <p>${s.desc}</p>
+        </div>
+    `).join('');
+}
+
+function renderCases() {
+    document.getElementById('casesGrid').innerHTML = CASES_DATA.map(c => `
+        <div class="case-card">&ldquo;${c.text}&rdquo;</div>
+    `).join('');
+}
+
+function renderFAQ() {
+    document.getElementById('faqList').innerHTML = FAQ_DATA.map((f, i) => `
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-${i}">${f.q}</button>
+            <div class="faq-answer" id="faq-answer-${i}" role="region"><p>${f.a}</p></div>
+        </div>
+    `).join('');
+}
+
+renderBenefits();
+renderAudience();
+renderPricing();
+renderProcess();
+renderCases();
+renderFAQ();
+
+const calcInput = document.getElementById('calcInput');
+const calcSlider = document.getElementById('calcSlider');
+const calcResult = document.getElementById('calcResult');
+
+function formatPLN(n) {
+    return n.toLocaleString('pl-PL') + ' zł';
+}
+
+function updateCalc(val) {
+    val = Math.max(500, Math.min(30000, parseInt(val) || 500));
+    const low = Math.round(val * 12 * 0.10);
+    const high = Math.round(val * 12 * 0.20);
+    calcResult.textContent = formatPLN(low) + ' – ' + formatPLN(high);
+    calcInput.value = val;
+    calcSlider.value = val;
+}
+
+calcInput.addEventListener('input', (e) => updateCalc(e.target.value));
+calcSlider.addEventListener('input', (e) => updateCalc(e.target.value));
+
+document.getElementById('faqList').addEventListener('click', (e) => {
+    const btn = e.target.closest('.faq-question');
+    if (!btn) return;
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+    }
+});
+
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav');
+navToggle.addEventListener('click', () => {
+    const open = navMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+});
+navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navMenu.classList.remove('open'));
+});
+
+const fileArea = document.getElementById('fileUploadArea');
+const fileInput = document.getElementById('fileInput');
+fileArea.addEventListener('click', () => fileInput.click());
+fileArea.addEventListener('dragover', (e) => { e.preventDefault(); fileArea.style.borderColor = '#00B8A9'; });
+fileArea.addEventListener('dragleave', () => { fileArea.style.borderColor = ''; });
+fileArea.addEventListener('drop', (e) => {
+    e.preventDefault();
+    fileArea.style.borderColor = '';
+    if (e.dataTransfer.files.length) {
+        fileInput.files = e.dataTransfer.files;
+        updateFileName();
+    }
+});
+fileInput.addEventListener('change', updateFileName);
+function updateFileName() {
+    const file = fileInput.files[0];
+    if (file) {
+        fileArea.querySelector('.file-upload-text').innerHTML = '<strong>' + file.name + '</strong>';
+    }
+}
+
+const form = document.getElementById('contactForm');
+const formMessage = document.getElementById('formMessage');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formMessage.className = 'form-message';
+    formMessage.textContent = '';
+
+    const fname = form.fname.value.trim();
+    const company = form.company.value.trim();
+    const email = form.email.value.trim();
+    const file = fileInput.files[0];
+
+    if (!fname || !company || !email || !file) {
+        showMessage('Proszę wypełnić wszystkie wymagane pola i załączyć fakturę.', 'error');
+        return;
+    }
+    if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) {
+        showMessage('Proszę podać poprawny adres e-mail.', 'error');
+        return;
+    }
+    const allowedTypes = ['application/pdf', 'image/jpeg', 'image/png'];
+    if (!allowedTypes.includes(file.type)) {
+        showMessage('Akceptowane formaty pliku: PDF, JPG, PNG.', 'error');
+        return;
+    }
+    if (file.size > 10 * 1024 * 1024) {
+        showMessage('Plik jest za duży (maks. 10 MB).', 'error');
+        return;
+    }
+
+    showMessage('Dziękujemy — odezwiemy się w ciągu 48 godzin z bezpłatną analizą.', 'success');
+    form.reset();
+    fileArea.querySelector('.file-upload-text').innerHTML = '<strong>Kliknij lub przeciągnij plik</strong><br>PDF, JPG lub PNG — maks. 10 MB';
+});
+
+function showMessage(text, type) {
+    formMessage.textContent = text;
+    formMessage.className = 'form-message ' + type;
+}
+
+const revealEls = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15 });
+
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    revealEls.forEach(el => revealObserver.observe(el));
+} else {
+    revealEls.forEach(el => el.classList.add('visible'));
+}
+</script>
+</body>
+</html>
