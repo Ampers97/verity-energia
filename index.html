@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pl" prefix="og: https://ogp.me/ns#">
-<head>
+<h
+        .tally-embed-wrapper { max-width: 640px; }
+        .tally-embed-wrapper iframe { background: transparent; }
+ead>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verity Energia — Niezależne doradztwo w optymalizacji kosztów energii dla MŚP</title>
     <meta name="description" content="Verity Energia — niezależne doradztwo energetyczne dla mikro, małych i średnich firm w Polsce. Mierzalne oszczędności bez prowizji od sprzedawców energii. Płacisz tylko wtedy, gdy oszczędzasz.">
     <meta name="keywords" content="optymalizacja kosztów energii, doradztwo energetyczne MŚP, obniżenie rachunków za prąd, analiza faktury energetycznej, konsultant energetyczny Kraków, Polska">
     <meta name="author" content="Verity Energia">
-    <meta name="robots" content="index, follow">
+        <meta name="google-site-verification" content="nMdfL0YLirobWKx6eYBUwaPqhXa12-d8iGySfoG0qgc" />
+<meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.verityenergia.pl/">
 
     <meta property="og:type" content="website">
@@ -1010,41 +1014,9 @@
                 <h2>Sprawdźmy, ile możesz zaoszczędzić</h2>
                 <p class="contact-sub">Prześlij swoją fakturę za energię — odpowiemy w ciągu 48 godzin z bezpłatną wstępną oceną.</p>
 
-                <form id="contactForm" novalidate>
-                    <div class="form-grid">
-                        <div class="form-field">
-                            <label for="fname">Imię i nazwisko*</label>
-                            <input type="text" id="fname" name="fname" placeholder="Jan Kowalski" required>
-                        </div>
-
-                        <div class="form-field">
-                            <label for="company">Firma*</label>
-                            <input type="text" id="company" name="company" placeholder="Nazwa firmy" required>
-                        </div>
-
-                        <div class="form-field full">
-                            <label for="email">E-mail*</label>
-                            <input type="email" id="email" name="email" placeholder="kontakt@firma.pl" required>
-                        </div>
-
-                        <div class="form-field full">
-                            <label>Załącz fakturę*</label>
-                            <div class="file-upload" id="fileUploadArea">
-                                <input type="file" id="fileInput" name="invoice" accept=".pdf,.jpg,.jpeg,.png" required>
-                                <div class="file-upload-text"><strong>Kliknij lub przeciągnij plik</strong><br>PDF, JPG lub PNG — maks. 10 MB</div>
-                            </div>
-                        </div>
-
-                        <div class="form-field full">
-                            <label for="message">Wiadomość</label>
-                            <textarea id="message" name="message" placeholder="Opisz krótko swoją sytuację..."></textarea>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary form-submit">Wyślij zapytanie</button>
-                    <p class="form-disclaimer">Wysłanie formularza nie zobowiązuje do dalszej współpracy. Dane wykorzystamy wyłącznie do kontaktu w sprawie analizy.</p>
-                    <div class="form-message" id="formMessage"></div>
-                </form>
+                <div class="tally-embed-wrapper">
+                    <iframe data-tally-src="https://tally.so/embed/yPGVG4?alignLeft=1&hideTitle=1&dynamicHeight=1" loading="lazy" width="100%" height="394" frameborder="0" marginheight="0" marginwidth="0" title="Verity 2"></iframe>
+                </div>
             </div>
         </section>
     </main>
@@ -1270,79 +1242,7 @@
             link.addEventListener('click', () => navMenu.classList.remove('open'));
         });
 
-        const fileArea = document.getElementById('fileUploadArea');
-        const fileInput = document.getElementById('fileInput');
-
-        fileArea.addEventListener('click', () => fileInput.click());
-        fileArea.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            fileArea.style.borderColor = '#00B8A9';
-        });
-        fileArea.addEventListener('dragleave', () => {
-            fileArea.style.borderColor = '';
-        });
-        fileArea.addEventListener('drop', (e) => {
-            e.preventDefault();
-            fileArea.style.borderColor = '';
-            if (e.dataTransfer.files.length) {
-                fileInput.files = e.dataTransfer.files;
-                updateFileName();
-            }
-        });
-
-        fileInput.addEventListener('change', updateFileName);
-
-        function updateFileName() {
-            const file = fileInput.files[0];
-            if (file) {
-                fileArea.querySelector('.file-upload-text').innerHTML = '<strong>' + file.name + '</strong>';
-            }
-        }
-
-        const form = document.getElementById('contactForm');
-        const formMessage = document.getElementById('formMessage');
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            formMessage.className = 'form-message';
-            formMessage.textContent = '';
-
-            const fname = form.fname.value.trim();
-            const company = form.company.value.trim();
-            const email = form.email.value.trim();
-            const file = fileInput.files[0];
-
-            if (!fname || !company || !email || !file) {
-                showMessage('Proszę wypełnić wszystkie wymagane pola i załączyć fakturę.', 'error');
-                return;
-            }
-
-            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                showMessage('Proszę podać poprawny adres e-mail.', 'error');
-                return;
-            }
-
-            const allowedTypes = ['application/pdf', 'image/jpeg', 'image/png'];
-            if (!allowedTypes.includes(file.type)) {
-                showMessage('Akceptowane formaty pliku: PDF, JPG, PNG.', 'error');
-                return;
-            }
-
-            if (file.size > 10 * 1024 * 1024) {
-                showMessage('Plik jest za duży (maks. 10 MB).', 'error');
-                return;
-            }
-
-            showMessage('Dziękujemy — odezwiemy się w ciągu 48 godzin z bezpłatną analizą.', 'success');
-            form.reset();
-            fileArea.querySelector('.file-upload-text').innerHTML = '<strong>Kliknij lub przeciągnij plik</strong><br>PDF, JPG lub PNG — maks. 10 MB';
-            calcAndShowResult(clampVal(parseInt(calcInput.value, 10) || 0));
-        });
-
-        function showMessage(text, type) {
-            formMessage.textContent = text;
-            formMessage.className = 'form-message ' + type;
-        }
+        
 
         const revealEls = document.querySelectorAll('.reveal');
         const revealObserver = new IntersectionObserver((entries) => {
@@ -1360,5 +1260,7 @@
             revealEls.forEach(el => el.classList.add('visible'));
         }
     </script>
+
+    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
 </body>
 </html>
