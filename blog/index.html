@@ -78,6 +78,27 @@
             justify-content: space-between;
         }
 
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 28px;
+        }
+
+        .nav a {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--color-graphite);
+        }
+
+        .nav a.active {
+            color: var(--color-accent-teal);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .nav { display: none; }
+        }
+
         .logo {
             font-family: var(--font-display);
             font-weight: 700;
@@ -174,7 +195,17 @@
     <header class="header">
         <div class="container">
             <a href="/" class="logo">Verity Energia</a>
-            <a href="/" class="back-link">← Strona główna</a>
+            <nav>
+                <ul class="nav" role="list">
+                    <li><a href="/#problem">Problem</a></li>
+                    <li><a href="/#rozwiazanie">Rozwiązanie</a></li>
+                    <li><a href="/#cennik">Cennik</a></li>
+                    <li><a href="/#proces">Proces</a></li>
+                    <li><a href="/#faq">FAQ</a></li>
+                    <li><a href="/blog/" class="active">Baza wiedzy</a></li>
+                    <li><a href="/#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
