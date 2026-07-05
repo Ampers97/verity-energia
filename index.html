@@ -59,9 +59,59 @@
         "@type": "ContactPoint",
         "email": "kontakt@verityenergia.pl",
         "contactType": "customer service",
+        "areaServed": "PL",
         "availableLanguage": "Polish"
       },
       "sameAs": []
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Czy muszę zmienić dostawcę energii?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nie, zwykle optymalizujemy warunki z obecnym dostawcą."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ile to kosztuje?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wstępna analiza faktury jest bezpłatna, dalsze wynagrodzenie to głównie success fee liczony od wygenerowanych oszczędności."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Skąd pewność niezależności doradztwa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verity Energia nie pobiera prowizji od sprzedawców energii — wynagrodzenie pochodzi wyłącznie od klienta i zależy od realnych oszczędności."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jak długo trwa proces optymalizacji kosztów energii?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wstępna analiza trwa kilka dni, a pełny audyt umowy i taryfy zajmuje zwykle od 2 do 6 tygodni."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Czy obsługujecie firmy poza Małopolską?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tak, współpraca odbywa się głównie zdalnie, więc obsługujemy firmy z całej Polski."
+          }
+        }
+      ]
     }
     </script>
 
@@ -942,7 +992,28 @@
                 <p class="eyebrow">Dlaczego warto</p>
                 <div class="benefits">
                     <h2>Korzyści współpracy</h2>
-                    <div class="benefits-grid" id="benefitsGrid"></div>
+                    <div class="benefits-grid" id="benefitsGrid">
+                        <div class="benefit-card">
+                            <h3>Zero ryzyka finansowego</h3>
+                            <p>Większość wynagrodzenia to success fee — płacisz tylko za realne oszczędności.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h3>Pełna niezależność</h3>
+                            <p>Żadnych prowizji od sprzedawców energii — doradzamy wyłącznie w interesie klienta.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h3>Bez inwestycji</h3>
+                            <p>Optymalizacja parametrów i warunków umowy, nie sprzętu.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h3>Specjalizacja w MŚP</h3>
+                            <p>Obsługujemy segment pomijany przez duże firmy doradcze.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h3>Szybki start</h3>
+                            <p>Pierwsza analiza w kilka dni, bezpłatnie.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -954,7 +1025,20 @@
                 <p class="eyebrow">Dla kogo</p>
                 <div class="audience">
                     <h2>Dla kogo pracujemy</h2>
-                    <div class="audience-grid" id="audienceGrid"></div>
+                    <div class="audience-grid" id="audienceGrid">
+                        <div class="audience-card">
+                            <h3>Mikrofirmy (1–9 osób)</h3>
+                            <p>Sklepy, punkty usługowe, gastronomia — decyduje właściciel.</p>
+                        </div>
+                        <div class="audience-card">
+                            <h3>Małe firmy (10–49 osób)</h3>
+                            <p>Restauracje, warsztaty, drukarnie — właściciel lub dyrektor operacyjny.</p>
+                        </div>
+                        <div class="audience-card">
+                            <h3>Średnie firmy (50–249 osób)</h3>
+                            <p>Produkcja, chłodnie, logistyka — CFO lub dyrektor operacyjny.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -967,7 +1051,56 @@
                 <div class="pricing">
                     <h2>Płacisz głównie wtedy, gdy oszczędzasz</h2>
                     <p class="pricing-intro">Nie ukrywamy zasad współpracy. Poniższe widełki pokazują typowy zakres dla danej wielkości firmy — ostateczne warunki ustalamy indywidualnie po bezpłatnej analizie Twojej faktury.</p>
-                    <div class="pricing-grid" id="pricingGrid"></div>
+                    <div class="pricing-grid" id="pricingGrid">
+                        <div class="pricing-card">
+                            <div class="pricing-card-name">MikroStart</div>
+                            <div class="pricing-card-segment">1–9 pracowników</div>
+                            <div class="pricing-card-row">
+                                <span class="pricing-card-label">Opłata wstępna</span>
+                                <span class="pricing-card-value">0–400 zł</span>
+                            </div>
+                            <div class="pricing-card-row">
+                                <span class="pricing-card-label">Success fee</span>
+                                <span class="pricing-card-value">25% oszczędności</span>
+                            </div>
+                            <div class="pricing-card-row">
+                                <span class="pricing-card-label">Okres rozliczenia</span>
+                                <span class="pricing-card-value">12 miesięcy</span>
+                            </div>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-card-name">SmallPro</div>
+                            <div class="pricing-card-segment">10–49 pracowników</div>
+                            <div class="pricing-card-row">
+                                <span class="pricing-card-label">Opłata wstępna</span>
+                                <span class="pricing-card-value">1 200–2 000 zł</span>
+                            </div>
+                            <div class="pricing-card-row">
+                                <span class="pricing-card-label">Success fee</span>
+                                <span class="pricing-card-value">20% oszczędności</span>
+                            </div>
+                            <div class="pricing-card-row">
+                                <span class="pricing-card-label">Okres rozliczenia</span>
+                                <span class="pricing-card-value">12 miesięcy</span>
+                            </div>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-card-name">MediumExpert</div>
+                            <div class="pricing-card-segment">50–249 pracowników</div>
+                            <div class="pricing-card-row">
+                                <span class="pricing-card-label">Opłata wstępna</span>
+                                <span class="pricing-card-value">3 500–6 000 zł</span>
+                            </div>
+                            <div class="pricing-card-row">
+                                <span class="pricing-card-label">Success fee</span>
+                                <span class="pricing-card-value">15–18% oszczędności</span>
+                            </div>
+                            <div class="pricing-card-row">
+                                <span class="pricing-card-label">Okres rozliczenia</span>
+                                <span class="pricing-card-value">12 miesięcy</span>
+                            </div>
+                        </div>
+                    </div>
                     <p class="pricing-note">Success fee liczony jest od realnie wygenerowanych oszczędności, weryfikowanych na podstawie Twoich wcześniejszych faktur — nie od hipotetycznych cen rynkowych. Wstępna analiza jednej faktury jest zawsze bezpłatna i nie zobowiązuje do dalszej współpracy.</p>
                 </div>
             </div>
@@ -980,7 +1113,28 @@
                 <p class="eyebrow">Jak to działa</p>
                 <div class="process">
                     <h2>Proces w 4 krokach</h2>
-                    <div class="process-steps" id="processSteps"></div>
+                    <div class="process-steps" id="processSteps">
+                        <div class="step">
+                            <div class="step-num">01</div>
+                            <h3>Bezpłatna analiza</h3>
+                            <p>Przesyłasz fakturę, w kilka dni dostajesz wstępną ocenę.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-num">02</div>
+                            <h3>Szczegółowy audyt</h3>
+                            <p>Pełna analiza umowy, taryfy, mocy umownej, opłat.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-num">03</div>
+                            <h3>Negocjacje i optymalizacja</h3>
+                            <p>Weryfikacja i negocjacje ze sprzedawcą w imieniu klienta.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-num">04</div>
+                            <h3>Mierzalny efekt</h3>
+                            <p>Raport z wdrożonymi zmianami i realnymi oszczędnościami.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -992,7 +1146,10 @@
                 <p class="eyebrow">Rezultaty</p>
                 <div class="cases">
                     <h2>Przykłady efektów</h2>
-                    <div class="cases-grid" id="casesGrid"></div>
+                    <div class="cases-grid" id="casesGrid">
+                        <div class="case-card">&ldquo;Restauracja w Krakowie, 18 pracowników — po renegocjacji mocy umownej oszczędność rzędu kilkunastu procent rocznych kosztów energii, bez zmiany dostawcy.&rdquo;</div>
+                        <div class="case-card">&ldquo;Betoniarnia, Mazowieckie — obniżka rachunku o 1500 zł miesięcznie po kompensacji mocy biernej.&rdquo;</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1004,7 +1161,28 @@
                 <p class="eyebrow">Pytania i odpowiedzi</p>
                 <div class="faq">
                     <h2>FAQ</h2>
-                    <div class="faq-list" id="faqList"></div>
+                    <div class="faq-list" id="faqList">
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-0">Czy muszę zmienić dostawcę energii?</button>
+                            <div class="faq-answer" id="faq-answer-0" role="region"><p>Nie, zwykle optymalizujemy warunki z obecnym dostawcą.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">Ile to kosztuje?</button>
+                            <div class="faq-answer" id="faq-answer-1" role="region"><p>Wstępna analiza bezpłatna, dalej głównie success fee od oszczędności.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">Skąd pewność niezależności?</button>
+                            <div class="faq-answer" id="faq-answer-2" role="region"><p>Brak prowizji od sprzedawców energii, wynagrodzenie tylko od klienta.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">Jak długo trwa proces?</button>
+                            <div class="faq-answer" id="faq-answer-3" role="region"><p>Wstępna analiza kilka dni, pełny audyt 2–6 tygodni.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">Czy obsługujecie firmy poza Małopolską?</button>
+                            <div class="faq-answer" id="faq-answer-4" role="region"><p>Tak, współpraca głównie zdalna.</p></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1031,141 +1209,16 @@
                 Małopolska, Polska
             </div>
             <div class="footer-links" style="margin-top:8px;">
+                <a href="/blog/">Blog</a> ·
                 <a href="/polityka-prywatnosci">Polityka prywatności</a>
             </div>
+            <p style="margin-top:16px; font-size:12px; opacity:.6; max-width:640px; margin-left:auto; margin-right:auto;">
+                Działalność nierejestrowana zgodnie z art. 5 ustawy Prawo przedsiębiorców.
+            </p>
         </div>
     </footer>
 
     <script>
-        const BENEFITS_DATA = [
-            { title: "Zero ryzyka finansowego", desc: "Większość wynagrodzenia to success fee — płacisz tylko za realne oszczędności." },
-            { title: "Pełna niezależność", desc: "Żadnych prowizji od sprzedawców energii — doradzamy wyłącznie w interesie klienta." },
-            { title: "Bez inwestycji", desc: "Optymalizacja parametrów i warunków umowy, nie sprzętu." },
-            { title: "Specjalizacja w MŚP", desc: "Obsługujemy segment pomijany przez duże firmy doradcze." },
-            { title: "Szybki start", desc: "Pierwsza analiza w kilka dni, bezpłatnie." }
-        ];
-
-        const AUDIENCE_DATA = [
-            { title: "Mikrofirmy (1–9 osób)", desc: "Sklepy, punkty usługowe, gastronomia — decyduje właściciel." },
-            { title: "Małe firmy (10–49 osób)", desc: "Restauracje, warsztaty, drukarnie — właściciel lub dyrektor operacyjny." },
-            { title: "Średnie firmy (50–249 osób)", desc: "Produkcja, chłodnie, logistyka — CFO lub dyrektor operacyjny." }
-        ];
-
-        const PRICING_DATA = [
-            {
-                name: "MikroStart",
-                segment: "1–9 pracowników",
-                rows: [
-                    { label: "Opłata wstępna", value: "0–400 zł" },
-                    { label: "Success fee", value: "25% oszczędności" },
-                    { label: "Okres rozliczenia", value: "12 miesięcy" }
-                ]
-            },
-            {
-                name: "SmallPro",
-                segment: "10–49 pracowników",
-                rows: [
-                    { label: "Opłata wstępna", value: "1 200–2 000 zł" },
-                    { label: "Success fee", value: "20% oszczędności" },
-                    { label: "Okres rozliczenia", value: "12 miesięcy" }
-                ]
-            },
-            {
-                name: "MediumExpert",
-                segment: "50–249 pracowników",
-                rows: [
-                    { label: "Opłata wstępna", value: "3 500–6 000 zł" },
-                    { label: "Success fee", value: "15–18% oszczędności" },
-                    { label: "Okres rozliczenia", value: "12 miesięcy" }
-                ]
-            }
-        ];
-
-        const PROCESS_DATA = [
-            { num: "01", title: "Bezpłatna analiza", desc: "Przesyłasz fakturę, w kilka dni dostajesz wstępną ocenę." },
-            { num: "02", title: "Szczegółowy audyt", desc: "Pełna analiza umowy, taryfy, mocy umownej, opłat." },
-            { num: "03", title: "Negocjacje i optymalizacja", desc: "Weryfikacja i negocjacje ze sprzedawcą w imieniu klienta." },
-            { num: "04", title: "Mierzalny efekt", desc: "Raport z wdrożonymi zmianami i realnymi oszczędnościami." }
-        ];
-
-        const CASES_DATA = [
-            { text: "Restauracja w Krakowie, 18 pracowników — po renegocjacji mocy umownej oszczędność rzędu kilkunastu procent rocznych kosztów energii, bez zmiany dostawcy." },
-            { text: "Betoniarnia, Mazowieckie — obniżka rachunku o 1500 zł miesięcznie po kompensacji mocy biernej." }
-        ];
-
-        const FAQ_DATA = [
-            { q: "Czy muszę zmienić dostawcę energii?", a: "Nie, zwykle optymalizujemy warunki z obecnym dostawcą." },
-            { q: "Ile to kosztuje?", a: "Wstępna analiza bezpłatna, dalej głównie success fee od oszczędności." },
-            { q: "Skąd pewność niezależności?", a: "Brak prowizji od sprzedawców energii, wynagrodzenie tylko od klienta." },
-            { q: "Jak długo trwa proces?", a: "Wstępna analiza kilka dni, pełny audyt 2–6 tygodni." },
-            { q: "Czy obsługujecie firmy poza Małopolską?", a: "Tak, współpraca głównie zdalna." }
-        ];
-
-        function renderBenefits() {
-            document.getElementById('benefitsGrid').innerHTML = BENEFITS_DATA.map(b => `
-                <div class="benefit-card">
-                    <h3>${b.title}</h3>
-                    <p>${b.desc}</p>
-                </div>
-            `).join('');
-        }
-
-        function renderAudience() {
-            document.getElementById('audienceGrid').innerHTML = AUDIENCE_DATA.map(a => `
-                <div class="audience-card">
-                    <h3>${a.title}</h3>
-                    <p>${a.desc}</p>
-                </div>
-            `).join('');
-        }
-
-        function renderPricing() {
-            document.getElementById('pricingGrid').innerHTML = PRICING_DATA.map(p => `
-                <div class="pricing-card">
-                    <div class="pricing-card-name">${p.name}</div>
-                    <div class="pricing-card-segment">${p.segment}</div>
-                    ${p.rows.map(r => `
-                        <div class="pricing-card-row">
-                            <span class="pricing-card-label">${r.label}</span>
-                            <span class="pricing-card-value">${r.value}</span>
-                        </div>
-                    `).join('')}
-                </div>
-            `).join('');
-        }
-
-        function renderProcess() {
-            document.getElementById('processSteps').innerHTML = PROCESS_DATA.map(s => `
-                <div class="step">
-                    <div class="step-num">${s.num}</div>
-                    <h3>${s.title}</h3>
-                    <p>${s.desc}</p>
-                </div>
-            `).join('');
-        }
-
-        function renderCases() {
-            document.getElementById('casesGrid').innerHTML = CASES_DATA.map(c => `
-                <div class="case-card">&ldquo;${c.text}&rdquo;</div>
-            `).join('');
-        }
-
-        function renderFAQ() {
-            document.getElementById('faqList').innerHTML = FAQ_DATA.map((f, i) => `
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-${i}">${f.q}</button>
-                    <div class="faq-answer" id="faq-answer-${i}" role="region"><p>${f.a}</p></div>
-                </div>
-            `).join('');
-        }
-
-        renderBenefits();
-        renderAudience();
-        renderPricing();
-        renderProcess();
-        renderCases();
-        renderFAQ();
-
         const calcInput = document.getElementById('calcInput');
         const calcSlider = document.getElementById('calcSlider');
         const calcResult = document.getElementById('calcResult');
