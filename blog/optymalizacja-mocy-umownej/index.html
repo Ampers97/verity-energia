@@ -104,6 +104,34 @@
 
         .back-link { font-family: var(--font-mono); font-size: 14px; }
 
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-graphite);
+        }
+
+        .nav a.active {
+            color: var(--color-accent-teal);
+            font-weight: 600;
+        }
+
+        .mobile-back {
+            display: none;
+            font-family: var(--font-mono);
+            font-size: 14px;
+        }
+
+        @media (max-width: 860px) {
+            .nav { display: none; }
+            .mobile-back { display: inline-block; }
+        }
+
         article { padding: 56px 0 80px; }
 
         .eyebrow {
@@ -197,7 +225,18 @@
     <header class="header">
         <div class="container wide">
             <a href="/" class="logo">Verity Energia</a>
-            <a href="/blog/" class="back-link">← Blog</a>
+            <nav>
+                <ul class="nav" role="list">
+                    <li><a href="/#problem">Problem</a></li>
+                    <li><a href="/#rozwiazanie">Rozwiązanie</a></li>
+                    <li><a href="/#cennik">Cennik</a></li>
+                    <li><a href="/#proces">Proces</a></li>
+                    <li><a href="/#faq">FAQ</a></li>
+                    <li><a href="/blog/" class="active">Baza wiedzy</a></li>
+                    <li><a href="/#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+            <a href="/blog/" class="mobile-back">← Blog</a>
         </div>
     </header>
 
