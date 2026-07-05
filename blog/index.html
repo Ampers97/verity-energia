@@ -100,10 +100,16 @@
         }
 
         .logo {
-            font-family: var(--font-display);
-            font-weight: 700;
-            font-size: 20px;
-            color: var(--color-ink);
+            display: inline-flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .logo-img {
+            height: 44px;
+            width: auto;
+            display: block;
+            object-fit: contain;
         }
 
         .back-link {
@@ -194,7 +200,9 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="/" class="logo">Verity Energia</a>
+            <a href="/" class="logo" aria-label="Verity Energia — strona główna">
+                <img src="/verity-energia-logo.jpg" alt="Verity Energia" class="logo-img" width="200" height="56" loading="eager">
+            </a>
             <nav>
                 <ul class="nav" role="list">
                     <li><a href="/#problem">Problem</a></li>
