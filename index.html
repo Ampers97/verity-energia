@@ -979,12 +979,12 @@
                     <h3>Kalkulator scenariuszy</h3>
                     <p class="calc-label">Twoja miesięczna faktura za energię (zł)</p>
                     <div class="calc-input-row">
-                        <input type="number" class="calc-input" id="calcInput" inputmode="numeric" placeholder="np. 5000" min="0" max="30000" value="5000" aria-label="Kwota miesięcznej faktury w złotych">
+                        <input type="number" class="calc-input" id="calcInput" inputmode="numeric" placeholder="np. 2000" min="0" max="15000" value="2000" aria-label="Kwota miesięcznej faktury w złotych">
                     </div>
-                    <input type="range" class="calc-slider" id="calcSlider" min="0" max="30000" value="5000" step="100" aria-label="Suwak kwoty faktury">
-                    <p class="calc-result-label">Gdyby koszt spadł o 5–15%, rocznie zostanie Ci:</p>
-                    <div class="calc-result" id="calcResult" aria-live="polite">3 000 – 9 000 zł</div>
-                    <p class="calc-disclaimer">Prosty rachunek poglądowy (scenariusz 5–15% rocznych kosztów), nie obietnica ani prognoza. Rzeczywisty wynik zależy od analizy Twoich faktur i może być niższy lub wyższy.</p>
+                    <input type="range" class="calc-slider" id="calcSlider" min="0" max="15000" value="2000" step="100" aria-label="Suwak kwoty faktury">
+                    <p class="calc-result-label">Gdyby koszt spadł o 10–15%, rocznie zostanie Ci:</p>
+                    <div class="calc-result" id="calcResult" aria-live="polite">2 400 – 3 600 zł</div>
+                    <p class="calc-disclaimer">Prosty rachunek poglądowy (scenariusz 10–15% rocznych kosztów), nie obietnica ani prognoza. Rzeczywisty wynik zależy od analizy Twoich faktur i może być niższy lub wyższy.</p>
                 </div>
             </div>
         </section>
@@ -1232,11 +1232,11 @@
         }
 
         function clampVal(val) {
-            return Math.max(0, Math.min(30000, val));
+            return Math.max(0, Math.min(15000, val));
         }
 
         function calcAndShowResult(val) {
-            const low = Math.round(val * 12 * 0.05);
+            const low = Math.round(val * 12 * 0.10);
             const high = Math.round(val * 12 * 0.15);
             calcResult.textContent = formatPLN(low) + ' – ' + formatPLN(high);
         }
