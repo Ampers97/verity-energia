@@ -1,1 +1,365 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polityka prywatności — Verity Energia</title>
+    <meta name="description" content="Polityka prywatności Verity Energia: jak przetwarzam dane osobowe z formularza, korespondencji i dokumentów przesłanych do analizy kosztów energii.">
+    <meta name="author" content="Piotr Głowaty">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.verityenergia.pl/polityka-prywatnosci/">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314213D'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-size='20' font-weight='700' fill='%2300B8A9' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-ink: #14213D;
+            --color-paper: #FAF9F6;
+            --color-accent-teal: #00B8A9;
+            --color-graphite: #2B2D33;
+            --color-line: #DEDAD1;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --font-mono: 'IBM Plex Mono', monospace;
+            --max-width: 1200px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-body);
+            font-size: 17px;
+            line-height: 1.65;
+            color: var(--color-graphite);
+            background: var(--color-paper);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img { max-width: 100%; display: block; }
+        a { color: var(--color-accent-teal); text-decoration: none; transition: opacity .2s; }
+        a:hover { opacity: .8; }
+        a:focus-visible { outline: 2px solid var(--color-accent-teal); outline-offset: 3px; }
+
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: 16px;
+            background: var(--color-accent-teal);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 0 0 6px 6px;
+            font-size: 14px;
+            font-weight: 600;
+            z-index: 9999;
+            transition: top .2s;
+        }
+        .skip-link:focus { top: 0; }
+
+        .header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(250,249,246,.92);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--color-line);
+        }
+        .header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            height: 76px;
+        }
+        .logo { display: inline-flex; align-items: center; flex-shrink: 0; }
+        .logo-img {
+            height: 56px;
+            width: auto;
+            display: block;
+            object-fit: contain;
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.12));
+        }
+        .header-links { display: flex; gap: 24px; list-style: none; margin-left: auto; }
+        .header-links a {
+            font-size: 14px;
+            color: var(--color-graphite);
+            font-weight: 500;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+        }
+        .header-links a:hover { color: var(--color-accent-teal); opacity: 1; }
+
+        .policy-wrap { padding: 132px 0 90px; }
+        .policy { max-width: 780px; }
+
+        .eyebrow {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: var(--color-accent-teal);
+            margin-bottom: 12px;
+        }
+
+        .policy h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 4.5vw, 48px);
+            font-weight: 700;
+            color: var(--color-ink);
+            line-height: 1.15;
+            margin-bottom: 12px;
+        }
+
+        .policy .updated { font-size: 14px; opacity: .7; margin-bottom: 40px; }
+
+        .policy h2 {
+            font-family: var(--font-display);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-ink);
+            margin: 44px 0 14px;
+            padding-top: 28px;
+            border-top: 1px solid var(--color-line);
+        }
+
+        .policy h3 {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--color-ink);
+            margin: 28px 0 8px;
+        }
+
+        .policy p { margin-bottom: 14px; }
+        .policy ul { margin: 0 0 14px 22px; }
+        .policy li { margin-bottom: 6px; }
+        .policy a { text-decoration: underline; text-underline-offset: 2px; }
+
+        .purpose {
+            border: 1px solid var(--color-line);
+            border-radius: 8px;
+            padding: 20px 24px 8px;
+            margin-bottom: 18px;
+            background: #fff;
+        }
+        .purpose h3 { margin-top: 0; }
+        .purpose dl { margin-bottom: 8px; }
+        .purpose dt {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: .03em;
+            color: var(--color-accent-teal);
+            margin-top: 12px;
+        }
+        .purpose dd { font-size: 16px; margin-bottom: 4px; }
+
+        .footer {
+            border-top: 1px solid rgba(255,255,255,.1);
+            background: var(--color-ink);
+            color: rgba(255,255,255,.6);
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer a { color: rgba(255,255,255,.7); text-decoration: none; }
+        .footer-links { margin-top: 8px; }
+        .footer-links a { margin: 0 8px; }
+
+        @media (max-width: 768px) {
+            .logo-img { height: 44px; }
+            .header-links { gap: 16px; }
+            .policy-wrap { padding-top: 112px; }
+            .policy h2 { font-size: 21px; }
+            .purpose { padding: 16px 18px 6px; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#tresc" class="skip-link">Przejdź do treści</a>
+
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo" aria-label="Verity Energia — strona główna">
+                <img src="/verity-energia-logo.jpg" alt="Verity Energia" class="logo-img" width="200" height="56" loading="eager">
+            </a>
+            <ul class="header-links" role="list">
+                <li><a href="/">Strona główna</a></li>
+                <li><a href="/#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="tresc" class="policy-wrap">
+        <div class="container">
+            <article class="policy">
+                <p class="eyebrow">Dokumenty</p>
+                <h1>Polityka prywatności</h1>
+                <p class="updated">Ostatnia aktualizacja: 31 października 2026 r.</p>
+
+                <p>Dbam o to, żeby przetwarzanie danych osobowych było przejrzyste. Poniżej wyjaśniam, kto jest administratorem Twoich danych, jakie dane przetwarzam, w jakich celach i na jakiej podstawie, komu je udostępniam, jak długo je przechowuję oraz jakie prawa Ci przysługują. Dokument dotyczy strony verityenergia.pl i usług doradczych świadczonych pod marką Verity Energia.</p>
+
+                <h2>1. Administrator danych</h2>
+                <p>Administratorem Twoich danych osobowych jest <strong>Piotr Głowaty</strong>, prowadzący działalność nierejestrowaną pod marką Verity Energia (Kraków, Polska), zwany dalej „Administratorem” lub „ja”.</p>
+                <p>Kontakt w sprawach dotyczących danych osobowych: <a href="mailto:kontakt@verityenergia.pl">kontakt@verityenergia.pl</a>, tel. <a href="tel:+48534074748">+48 534 074 748</a>.</p>
+
+                <h2>2. Jakie dane przetwarzam i w jakich celach</h2>
+
+                <div class="purpose">
+                    <h3>2.1. Kontakt i wstępna ocena faktury</h3>
+                    <dl>
+                        <dt>Zakres danych</dt>
+                        <dd>imię i nazwisko, adres e-mail, numer telefonu (jeśli go podasz), nazwa firmy, treść wiadomości oraz dane zawarte w przesłanej fakturze i dokumentach (np. dane firmy, adres punktu poboru energii, numer PPE, dane o zużyciu i kosztach energii).</dd>
+                        <dt>Podstawa prawna</dt>
+                        <dd>art. 6 ust. 1 lit. b RODO (działania podejmowane na Twoje żądanie przed zawarciem umowy) oraz art. 6 ust. 1 lit. f RODO (mój prawnie uzasadniony interes: odpowiedź na Twoje zapytanie).</dd>
+                        <dt>Okres przechowywania</dt>
+                        <dd>do zakończenia korespondencji. Jeśli nie dojdzie do współpracy, dane i dokumenty usuwam lub anonimizuję najpóźniej po 12 miesiącach od ostatniego kontaktu.</dd>
+                    </dl>
+                </div>
+
+                <div class="purpose">
+                    <h3>2.2. Realizacja usług doradczych, w tym programu pilotażowego</h3>
+                    <dl>
+                        <dt>Zakres danych</dt>
+                        <dd>dane z pkt 2.1 oraz umowy ze sprzedawcą i operatorem sieci, dane godzinowe z licznika zdalnego odczytu, informacje o odbiornikach i godzinach pracy firmy, a w razie udzielenia pełnomocnictwa także dane identyfikujące osobę, która go udziela.</dd>
+                        <dt>Podstawa prawna</dt>
+                        <dd>art. 6 ust. 1 lit. b RODO (wykonanie umowy).</dd>
+                        <dt>Okres przechowywania</dt>
+                        <dd>przez czas realizacji umowy oraz 12 miesięcy po przekazaniu raportu. Następnie dokumenty usuwam lub anonimizuję, chyba że wyrazisz zgodę na dłuższe przechowywanie albo przepisy prawa wymagają inaczej.</dd>
+                    </dl>
+                </div>
+
+                <div class="purpose">
+                    <h3>2.3. Przedstawienie propozycji współpracy firmom</h3>
+                    <dl>
+                        <dt>Zakres danych</dt>
+                        <dd>nazwa firmy, imię i nazwisko osoby kontaktowej (jeśli są publicznie dostępne), służbowy adres e-mail i telefon, branża.</dd>
+                        <dt>Podstawa prawna</dt>
+                        <dd>art. 6 ust. 1 lit. f RODO (mój prawnie uzasadniony interes: przedstawienie własnej oferty usług doradczych przedsiębiorcom).</dd>
+                        <dt>Okres przechowywania</dt>
+                        <dd>do czasu wniesienia sprzeciwu, nie dłużej niż 12 miesięcy od ostatniego kontaktu. Jeśli zgłosisz sprzeciw, zapisuję Twój adres na liście wyłączeń wyłącznie po to, aby nie kontaktować się z Tobą ponownie.</dd>
+                    </dl>
+                    <p>Masz prawo w każdej chwili sprzeciwić się takiemu kontaktowi. Wystarczy odpowiedzieć na wiadomość słowem „NIE” albo napisać na adres kontakt@verityenergia.pl.</p>
+                </div>
+
+                <div class="purpose">
+                    <h3>2.4. Opinie i przykłady z realizacji (case study)</h3>
+                    <dl>
+                        <dt>Zakres danych</dt>
+                        <dd>treść opinii, a jeśli wyrazisz na to odrębną zgodę, także nazwa firmy lub logo.</dd>
+                        <dt>Podstawa prawna</dt>
+                        <dd>art. 6 ust. 1 lit. a RODO (Twoja zgoda).</dd>
+                        <dt>Okres przechowywania</dt>
+                        <dd>do czasu cofnięcia zgody. Zgodę możesz cofnąć w każdej chwili, bez wpływu na zgodność z prawem przetwarzania dokonanego przed jej cofnięciem. Materiały w formie anonimowej (bez danych identyfikujących) nie są danymi osobowymi.</dd>
+                    </dl>
+                </div>
+
+                <div class="purpose">
+                    <h3>2.5. Obowiązki prawne, podatkowe i rachunkowe</h3>
+                    <dl>
+                        <dt>Podstawa prawna</dt>
+                        <dd>art. 6 ust. 1 lit. c RODO (obowiązki wynikające z przepisów).</dd>
+                        <dt>Okres przechowywania</dt>
+                        <dd>przez okres wymagany przepisami podatkowymi i rachunkowymi (zwykle 5 lat od końca roku, w którym powstał obowiązek podatkowy).</dd>
+                    </dl>
+                </div>
+
+                <div class="purpose">
+                    <h3>2.6. Dochodzenie i obrona roszczeń</h3>
+                    <dl>
+                        <dt>Podstawa prawna</dt>
+                        <dd>art. 6 ust. 1 lit. f RODO (mój prawnie uzasadniony interes).</dd>
+                        <dt>Okres przechowywania</dt>
+                        <dd>do czasu przedawnienia roszczeń.</dd>
+                    </dl>
+                </div>
+
+                <div class="purpose">
+                    <h3>2.7. Bezpieczeństwo i działanie strony internetowej</h3>
+                    <dl>
+                        <dt>Zakres danych</dt>
+                        <dd>dane techniczne przetwarzane automatycznie przy korzystaniu ze strony (np. adres IP, data i godzina wizyty, typ przeglądarki), zapisywane przez dostawcę hostingu w logach serwera.</dd>
+                        <dt>Podstawa prawna</dt>
+                        <dd>art. 6 ust. 1 lit. f RODO (mój prawnie uzasadniony interes: zapewnienie bezpieczeństwa i poprawnego działania strony).</dd>
+                        <dt>Okres przechowywania</dt>
+                        <dd>zgodnie z ustawieniami dostawcy hostingu, zwykle krótkoterminowo.</dd>
+                    </dl>
+                </div>
+
+                <h2>3. Skąd mam Twoje dane</h2>
+                <ul>
+                    <li>bezpośrednio od Ciebie (formularz, e-mail, telefon, rozmowa),</li>
+                    <li>ze źródeł publicznie dostępnych, takich jak strona internetowa Twojej firmy, wizytówka w wyszukiwarce lub mapach albo publiczne rejestry przedsiębiorców,</li>
+                    <li>od osoby, która poleciła Ci kontakt ze mną lub poleciła mi kontakt z Tobą.</li>
+                </ul>
+                <p>Jeśli dane nie pochodzą od Ciebie, informuję o tym przy pierwszym kontakcie i wskazuję źródło.</p>
+
+                <h2>4. Odbiorcy danych</h2>
+                <p>Twoje dane mogą być powierzane lub udostępniane:</p>
+                <ul>
+                    <li>dostawcom usług informatycznych, z których korzystam (hosting strony, poczta elektroniczna, formularz Tally, przechowywanie plików),</li>
+                    <li>podmiotom świadczącym usługi księgowe, prawne lub podatkowe,</li>
+                    <li>organom i instytucjom, jeśli wymagają tego przepisy prawa.</li>
+                </ul>
+                <p>Nie sprzedaję danych. Dokumentów i danych klientów nie przekazuję sprzedawcom energii, brokerom ani innym podmiotom trzecim bez Twojej zgody. Wyjątkiem jest sytuacja, w której na Twoje zlecenie i na podstawie pełnomocnictwa składam wniosek do operatora sieci lub sprzedawcy, i wyłącznie w zakresie niezbędnym do jego złożenia.</p>
+
+                <h2>5. Przekazywanie danych poza Europejski Obszar Gospodarczy</h2>
+                <p>Niektórzy dostawcy usług informatycznych mogą przetwarzać dane poza EOG. W takim przypadku dane są chronione odpowiednimi mechanizmami przewidzianymi w RODO, np. decyzją Komisji Europejskiej o odpowiednim stopniu ochrony lub standardowymi klauzulami umownymi.</p>
+
+                <h2>6. Twoje prawa</h2>
+                <p>Przysługuje Ci prawo do:</p>
+                <ul>
+                    <li>dostępu do danych oraz otrzymania ich kopii,</li>
+                    <li>sprostowania danych,</li>
+                    <li>usunięcia danych („prawo do bycia zapomnianym”),</li>
+                    <li>ograniczenia przetwarzania,</li>
+                    <li>przenoszenia danych (gdy przetwarzam je na podstawie zgody lub umowy, w sposób zautomatyzowany),</li>
+                    <li>sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie, w tym w każdej chwili wobec kontaktu w celu przedstawienia oferty,</li>
+                    <li>cofnięcia zgody w dowolnym momencie (jeśli przetwarzam dane na jej podstawie),</li>
+                    <li>wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa, <a href="https://uodo.gov.pl" rel="noopener">uodo.gov.pl</a>).</li>
+                </ul>
+                <p>Aby skorzystać z tych praw, napisz na adres <a href="mailto:kontakt@verityenergia.pl">kontakt@verityenergia.pl</a>. Odpowiem w ciągu miesiąca od otrzymania żądania.</p>
+
+                <h2>7. Dobrowolność podania danych</h2>
+                <p>Podanie danych jest dobrowolne, ale niezbędne, abym mógł odpowiedzieć na Twoje zapytanie, ocenić fakturę lub zrealizować usługę. Bez dokumentów i podstawowych informacji nie jestem w stanie wykonać analizy.</p>
+
+                <h2>8. Profilowanie i zautomatyzowane decyzje</h2>
+                <p>Nie podejmuję wobec Ciebie decyzji w sposób wyłącznie zautomatyzowany i nie profiluję użytkowników w rozumieniu RODO.</p>
+
+                <h2>9. Pliki cookies i zasoby zewnętrzne</h2>
+                <p>Strona nie używa własnych plików cookies ani narzędzi analitycznych lub reklamowych. Ładuje jednak zasoby zewnętrzne: czcionki z serwisu Google Fonts oraz formularz kontaktowy z serwisu Tally. Ich dostawcy mogą w związku z tym otrzymać dane techniczne Twojego urządzenia (np. adres IP) i zgodnie z własnymi politykami prywatności zapisywać pliki cookies lub podobne technologie. Pliki cookies możesz kontrolować lub usunąć w ustawieniach przeglądarki.</p>
+                <p>Jeśli w przyszłości na stronie pojawią się narzędzia analityczne lub marketingowe, zaktualizuję tę politykę i poproszę o zgodę, tam gdzie jest wymagana.</p>
+
+                <h2>10. Poufność i bezpieczeństwo</h2>
+                <p>Stosuję środki techniczne i organizacyjne adekwatne do ryzyka, w tym ograniczam dostęp do dokumentów klientów i przechowuję je tylko tak długo, jak to potrzebne do celów opisanych powyżej. Informacje o zużyciu i kosztach energii traktuję jako poufne.</p>
+
+                <h2>11. Zmiany polityki</h2>
+                <p>Mogę zaktualizować tę politykę, np. przy zmianie sposobu przetwarzania danych lub przepisów. Aktualna wersja jest zawsze dostępna na tej stronie, a data ostatniej aktualizacji znajduje się na jej początku.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><strong>Verity Energia</strong> · Piotr Głowaty — Niezależne doradztwo. Mierzalne oszczędności.</p>
+            <div class="footer-links">
+                <a href="mailto:kontakt@verityenergia.pl">kontakt@verityenergia.pl</a> ·
+                <a href="tel:+48534074748">+48 534 074 748</a> ·
+                Kraków, Polska
+            </div>
+            <div class="footer-links" style="margin-top:8px;">
+                <a href="/blog/">Blog</a> ·
+                <a href="/polityka-prywatnosci/">Polityka prywatności</a>
+            </div>
+            <p style="margin-top:16px; font-size:12px; opacity:.6; max-width:640px; margin-left:auto; margin-right:auto;">
+                Verity Energia — działalność nierejestrowana prowadzona przez Piotra Głowatego, zgodnie z art. 5 ustawy Prawo przedsiębiorców.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
