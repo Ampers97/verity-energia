@@ -1,0 +1,7 @@
+# Verity Energia
+> Niezależny doradca energetyczny z Krakowa (Piotr Głowaty). Analiza faktur za prąd dla mikro, małych i średnich firm w całej Polsce: moc umowna, taryfa, energia bierna, porównanie ofert sprzedawców. Bez prowizji od sprzedawców energii.
+
+- [Strona główna](https://verityenergia.pl/): oferta, proces, pilotaż, FAQ
+- [Baza wiedzy](https://verityenergia.pl/blog/): artykuły o fakturach i kosztach energii
+- [Energia bierna pojemnościowa](https://verityenergia.pl/blog/energia-bierna-pojemnosciowa/)
+- [Moc umowna](https://verityenergia.pl/blog/optymalizacja-mocy-umownej/)

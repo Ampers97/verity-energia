@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.verityenergia.pl/sitemap.xml
+Sitemap: https://verityenergia.pl/sitemap.xml
