@@ -309,6 +309,7 @@
 
         .nav a {
             font-size: 14px;
+            white-space: nowrap;
             color: var(--color-graphite);
             font-weight: 500;
             min-height: 44px;
@@ -892,6 +893,26 @@
             }
         }
 
+        @media (max-width: 1100px) {
+            .nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 76px;
+                left: 0;
+                right: 0;
+                background: var(--color-paper);
+                padding: 24px;
+                gap: 16px;
+                border-bottom: 1px solid var(--color-line);
+                max-height: calc(100vh - 76px);
+                overflow-y: auto;
+            }
+
+            .nav.open { display: flex; }
+            .nav-toggle { display: flex; }
+        }
+
         @media (max-width: 1024px) {
             .hero .container {
                 grid-template-columns: 1fr;
@@ -911,21 +932,6 @@
 
             .logo-img { height: 44px; }
 
-            .nav {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 76px;
-                left: 0;
-                right: 0;
-                background: var(--color-paper);
-                padding: 24px;
-                gap: 16px;
-                border-bottom: 1px solid var(--color-line);
-            }
-
-            .nav.open { display: flex; }
-            .nav-toggle { display: flex; }
 
             .process-steps { grid-template-columns: 1fr; }
             .form-grid { grid-template-columns: 1fr; }
@@ -1016,6 +1022,69 @@
 .tally-embed-wrapper { max-width: 640px; }
 .tally-embed-wrapper iframe { background: transparent; }
 
+
+/* Przykładowy raport: zajawka na stronie głównej */
+.report-teaser {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 60px;
+    align-items: center;
+}
+.report-teaser h2 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 3.5vw, 40px);
+    color: var(--color-ink);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.report-teaser-text > p:not(.eyebrow) {
+    max-width: 640px;
+    margin-bottom: 28px;
+}
+.report-preview {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    justify-self: center;
+    padding: 0 18px 18px 0;
+}
+.report-preview::before {
+    content: '';
+    position: absolute;
+    top: 18px; left: 18px; right: 0; bottom: 0;
+    background: rgba(0,184,169,.10);
+    border: 1px solid rgba(0,184,169,.35);
+    border-radius: 8px;
+}
+.report-preview a {
+    position: relative;
+    display: block;
+    background: #fff;
+    border: 1px solid var(--color-line);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgba(20,33,61,.12);
+    transition: transform .2s, box-shadow .2s;
+}
+.report-preview a:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(20,33,61,.16);
+}
+.report-preview img { width: 100%; height: auto; }
+
+@media (max-width: 900px) {
+    .report-teaser { grid-template-columns: 1fr; gap: 40px; }
+    .report-preview { max-width: 320px; }
+}
+@media (max-width: 600px) {
+    .report-teaser .btn { display: block; text-align: center; }
+    .report-preview { max-width: 280px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .report-preview a { transition: none; }
+    .report-preview a:hover { transform: none; }
+}
     </style>
 </head>
 <body>
@@ -1035,6 +1104,7 @@
                 <ul class="nav" role="list">
                                         <li><a href="#rozwiazanie">Rozwiązanie</a></li>
                     <li><a href="#proces">Proces</a></li>
+                    <li><a href="/przykladowy-raport/">Przykładowy raport</a></li>
                     <li><a href="#omnie">O mnie</a></li>
                     <li><a href="#pilotaz">Pilotaż</a></li>
                     <li><a href="#faq">FAQ</a></li>
@@ -1227,6 +1297,26 @@
                             <h3>Mierzalny efekt</h3>
                             <p>Efekt potwierdza nowa umowa lub kolejne faktury, dzięki czemu widzisz realną oszczędność.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section class="section" id="przyklad-raportu">
+            <div class="container reveal">
+                <div class="report-teaser">
+                    <div class="report-teaser-text">
+                        <p class="eyebrow">Przykładowy raport</p>
+                        <h2>Zobacz, jak wygląda raport z analizy rachunków za prąd</h2>
+                        <p>Zanim prześlesz fakturę, zobacz, co dostajesz po pełnej analizie. Przygotowałem przykładowy raport dla fikcyjnej piekarni w dwóch wersjach: skróconej (2 strony) i pełnej (7 stron). Znajdziesz w nim podział kosztów, ustalenia dotyczące mocy umownej, taryfy, energii biernej i oferty sprzedawcy, plan działań z terminami oraz wzory wniosków. Dane są fikcyjne, ale pokazują zakres pracy i sposób przedstawiania wniosków, także tych, przy których radzę niczego nie zmieniać.</p>
+                        <a href="/przykladowy-raport/" class="btn btn-secondary">Zobacz przykładowy raport</a>
+                    </div>
+                    <div class="report-preview">
+                        <a href="/przykladowy-raport/" tabindex="-1" aria-hidden="true">
+                            <img src="/przykladowy-raport/podglad-skrocony.jpg" alt="" width="640" height="905" loading="lazy">
+                        </a>
                     </div>
                 </div>
             </div>
