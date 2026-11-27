@@ -5,3 +5,4 @@
 - [Baza wiedzy](https://verityenergia.pl/blog/): artykuły o fakturach i kosztach energii
 - [Energia bierna pojemnościowa](https://verityenergia.pl/blog/energia-bierna-pojemnosciowa/)
 - [Moc umowna](https://verityenergia.pl/blog/optymalizacja-mocy-umownej/)
+- [Przykładowy raport z analizy rachunków (piekarnia)](https://verityenergia.pl/przykladowy-raport/): wersja skrócona i pełna w PDF
