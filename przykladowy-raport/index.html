@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pl" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Przykładowy raport z analizy rachunków za prąd dla firmy | Verity Energia</title>
+<meta name="description" content="Zobacz, jak wygląda raport z analizy faktur za prąd dla małej firmy: moc umowna, taryfa, energia bierna, oferty. Przykład dla piekarni w PDF.">
+<meta name="author" content="Piotr Głowaty"><meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://verityenergia.pl/przykladowy-raport/"><link rel="icon" href="/favicon.ico">
+<meta property="og:type" content="website"><meta property="og:url" content="https://verityenergia.pl/przykladowy-raport/">
+<meta property="og:title" content="Przykładowy raport z analizy rachunków za prąd dla firmy | Verity Energia"><meta property="og:description" content="Zobacz, jak wygląda raport z analizy faktur za prąd dla małej firmy: moc umowna, taryfa, energia bierna, oferty. Przykład dla piekarni w PDF.">
+<meta property="og:image" content="https://verityenergia.pl/przykladowy-raport/podglad-skrocony.jpg"><meta property="og:locale" content="pl_PL"><meta property="og:site_name" content="Verity Energia">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "name": "Przykładowy raport z analizy rachunków za prąd: piekarnia", "description": "Zobacz, jak wygląda raport z analizy faktur za prąd dla małej firmy: moc umowna, taryfa, energia bierna, oferty. Przykład dla piekarni w PDF.", "url": "https://verityenergia.pl/przykladowy-raport/", "inLanguage": "pl", "datePublished": "2026-11-27", "dateModified": "2026-11-27", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://verityenergia.pl/przykladowy-raport/podglad-skrocony.jpg"}, "author": {"@type": "Person", "name": "Piotr Głowaty", "url": "https://verityenergia.pl/#omnie"}, "publisher": {"@type": "Organization", "name": "Verity Energia", "url": "https://verityenergia.pl/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Verity Energia", "item": "https://verityenergia.pl/"}, {"@type": "ListItem", "position": 2, "name": "Przykładowy raport"}]}]}</script>
+<style>
+        :root {
+            --color-ink: #14213D;
+            --color-paper: #FAF9F6;
+            --color-accent-teal: #00B8A9;
+            --color-accent-amber: #E8A33D;
+            --color-graphite: #2B2D33;
+            --color-line: #DEDAD1;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --font-mono: 'IBM Plex Mono', monospace;
+            --max-width: 1200px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: var(--font-body);
+            font-size: 17px;
+            line-height: 1.65;
+            color: var(--color-graphite);
+            background: var(--color-paper);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--color-accent-teal); text-decoration: none; }
+        a:hover { opacity: .8; }
+
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+        .header {
+            border-bottom: 1px solid var(--color-line);
+            padding: 24px 0;
+        }
+
+        .header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 28px;
+        }
+
+        .nav a {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--color-graphite);
+        }
+
+        .nav a.active {
+            color: var(--color-accent-teal);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .nav { display: none; }
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .logo-img {
+            height: 44px;
+            width: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        .back-link {
+            font-family: var(--font-mono);
+            font-size: 14px;
+        }
+
+        .blog-hero {
+            padding: 64px 0 48px;
+        }
+
+        .eyebrow {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: var(--color-accent-teal);
+            margin-bottom: 12px;
+        }
+
+        .blog-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 4.5vw, 48px);
+            color: var(--color-ink);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .blog-hero p {
+            font-size: 18px;
+            max-width: 640px;
+            opacity: .85;
+        }
+
+        .post-list {
+            padding: 0 0 96px;
+            display: grid;
+            gap: 24px;
+        }
+
+        .post-card {
+            border: 1px solid var(--color-line);
+            border-radius: 8px;
+            padding: 32px;
+            transition: border-color .2s;
+        }
+
+        .post-card:hover { border-color: var(--color-accent-teal); }
+
+        .post-meta {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            color: var(--color-accent-teal);
+            margin-bottom: 10px;
+        }
+
+        .post-card h2 {
+            font-family: var(--font-display);
+            font-size: 24px;
+            color: var(--color-ink);
+            margin-bottom: 10px;
+        }
+
+        .post-card h2 a { color: inherit; }
+
+        .post-card p {
+            opacity: .85;
+            margin-bottom: 16px;
+        }
+
+        .post-card .read-more {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .footer {
+            border-top: 1px solid var(--color-line);
+            background: var(--color-ink);
+            color: rgba(255,255,255,.6);
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer a { color: rgba(255,255,255,.7); }
+    
+.article{padding:56px 0 80px;max-width:760px}
+.article h1{font-family:var(--font-display);font-size:clamp(28px,4vw,40px);line-height:1.2;color:var(--color-ink);margin-bottom:14px}
+.article h2{font-family:var(--font-display);font-size:24px;color:var(--color-ink);margin:36px 0 10px}
+.article p,.article li{margin-bottom:14px}.article ul,.article ol{padding-left:22px}
+.lead{font-size:19px}.byline{font-family:var(--font-mono);font-size:13px;color:var(--color-accent-teal);margin-bottom:24px}
+.note{border-left:3px solid var(--color-accent-amber);padding:12px 18px;background:#fff;margin:24px 0}
+.cta-box{border:1px solid var(--color-accent-teal);border-radius:8px;padding:24px;margin-top:40px}
+.btn{display:inline-block;background:var(--color-ink);color:#fff;padding:12px 22px;border-radius:6px;font-weight:600}
+a:focus-visible{outline:2px solid var(--color-accent-amber);outline-offset:2px}
+.page{padding:56px 0 80px}
+.page h1{font-family:var(--font-display);font-size:clamp(28px,4vw,42px);line-height:1.2;color:var(--color-ink);margin-bottom:16px}
+.page h2{font-family:var(--font-display);font-size:26px;color:var(--color-ink);margin:44px 0 14px}
+.page p{margin-bottom:16px}.lead{font-size:19px;max-width:720px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin:32px 0}
+.dl{border:1px solid var(--color-line);border-radius:8px;padding:24px;background:#fff;display:flex;flex-direction:column}
+.dl img{width:100%;height:auto;border:1px solid var(--color-line);border-radius:4px;margin-bottom:16px}
+.dl h3{font-family:var(--font-display);font-size:21px;color:var(--color-ink);margin-bottom:8px}
+.dl .meta{font-family:var(--font-mono);font-size:13px;color:var(--color-accent-teal);margin-bottom:10px}
+.dl .btn{margin-top:auto;text-align:center}
+.tablewrap{overflow-x:auto;margin:16px 0 24px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px;background:#fff}
+th,td{border:1px solid var(--color-line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:#EEF1F6;color:var(--color-ink)}
+.checks{list-style:none;padding:0}.checks li{padding:10px 0;border-bottom:1px solid var(--color-line)}
+.checks strong{color:var(--color-ink)}
+.cta-box{background:var(--color-ink);color:#fff;border:0}.cta-box .btn{background:var(--color-accent-amber)}
+.small{font-size:14px;opacity:.8}</style>
+</head>
+<body>
+<header class="header"><div class="container">
+<a href="/" class="logo" aria-label="Verity Energia — strona główna"><img src="/verity-energia-logo.jpg" alt="Verity Energia" class="logo-img" width="200" height="56"></a>
+<nav><ul class="nav" role="list">
+                    <li><a href="/#rozwiazanie">Rozwiązanie</a></li>
+                    <li><a href="/#proces">Proces</a></li>
+                    <li><a href="/#omnie">O mnie</a></li>
+                    <li><a href="/#pilotaz">Pilotaż</a></li>
+                    <li><a href="/#faq">FAQ</a></li>
+                    <li><a href="/blog/">Baza wiedzy</a></li>
+                    <li><a href="/#kontakt">Kontakt</a></li>
+                </ul></nav></div></header>
+<main><div class="container"><div class="page">
+<p class="eyebrow">Przykładowy raport</p>
+<h1>Przykładowy raport z analizy rachunków za prąd: piekarnia</h1>
+<p class="lead">Tak wygląda raport, który dostajesz po pełnej analizie. Firma, liczby i oferty są fikcyjne, ale pokazują zakres pracy i sposób przedstawiania wniosków.</p>
+<div class="note"><strong>To dane przykładowe.</strong> Stawki są umowne i nie odpowiadają taryfie żadnego operatora. W raporcie dla Twojej firmy każda wartość pochodzi z Twoich faktur, danych z licznika i aktualnej taryfy operatora sieci.</div>
+<div class="cards">
+<div class="dl"><img src="/przykladowy-raport/podglad-skrocony.jpg" alt="Pierwsza strona skróconego przykładowego raportu z analizy rachunków za prąd" width="640" height="905" loading="lazy">
+<p class="meta">PDF · 2 strony</p><h3>Wersja skrócona</h3>
+<p>Wyniki, rozkład kosztów i kolejne kroki. Do przeczytania w kilka minut.</p>
+<a class="btn" href="/przykladowy-raport/przykladowy-raport-skrocony.pdf" target="_blank" rel="noopener">Otwórz PDF</a></div>
+<div class="dl"><img src="/przykladowy-raport/podglad-pelny.jpg" alt="Pierwsza strona pełnego przykładowego raportu z analizy rachunków za prąd" width="640" height="905" loading="lazy">
+<p class="meta">PDF · 7 stron</p><h3>Wersja pełna</h3>
+<p>Dane i metoda, profil punktu poboru, pięć ustaleń, trzy scenariusze, plan działań z terminami, ryzyka i wzory wniosków.</p>
+<a class="btn" href="/przykladowy-raport/przykladowy-raport-pelny.pdf" target="_blank" rel="noopener">Otwórz PDF</a></div>
+</div>
+<h2>Co wykazał ten przykład</h2>
+<p>Mała piekarnia zapłaciła w ciągu 12 miesięcy <strong>57 568 zł netto</strong> za 54 MWh energii. Analiza wskazała możliwą oszczędność <strong>2 718–5 928 zł rocznie</strong> (4,7–10,3% kosztów), w scenariuszu bazowym 4 608 zł, bez żadnej inwestycji.</p>
+<div class="tablewrap"><table><thead><tr><th>Obszar</th><th>Rekomendacja</th><th>Oszczędność rocznie (bazowa)</th><th>Pewność</th></tr></thead><tbody><tr><td>F1. Moc umowna</td><td>Obniżyć z 55 do 45 kW</td><td>1 260 zł</td><td>Wysoka</td></tr><tr><td>F2. Energia bierna</td><td>Nie inwestować, obserwować tgφ</td><td>0 zł</td><td>Wysoka</td></tr><tr><td>F3. Grupa taryfowa</td><td>Zmienić z C21 na C22a</td><td>1 380 zł</td><td>Średnia</td></tr><tr><td>F4. Sprzedawca i umowa</td><td>Przejść na ofertę A (12 mies., cena stała)</td><td>1 968 zł</td><td>Średnia</td></tr><tr><td>F5. Błąd na fakturze</td><td>Reklamować cenę energii za styczeń</td><td>270 zł jednorazowo</td><td>Wysoka</td></tr></tbody></table></div>
+<p>Przy energii biernej raport radzi, żeby nie inwestować w kompensację, bo zwrot trwałby ok. 6,5 roku. Jeśli nie ma czego poprawiać, mówię to wprost.</p>
+<h2>Co sprawdzam w pełnej analizie</h2>
+<ul class="checks">
+<li><strong>Rachunek i opłaty:</strong> czy naliczone stawki i pozycje odpowiadają umowie.</li>
+<li><strong>Moc umowna i taryfa:</strong> czy są podstawy do dokładniejszego sprawdzenia ich doboru.</li>
+<li><strong>Energia bierna i przekroczenia:</strong> czy występują opłaty wymagające dalszej diagnozy.</li>
+<li><strong>Umowa sprzedaży:</strong> cena, opłaty dodatkowe, terminy i warunki zakończenia.</li>
+</ul>
+<div class="cta-box"><p><strong>Chcesz zobaczyć to na swojej fakturze?</strong> Prześlij ostatnią fakturę ze szczegółowym rozliczeniem. Wstępna ocena jest bezpłatna, odpowiedź wysyłam do 3 dni roboczych od otrzymania dokumentów. Przesłanie faktury nie zleca płatnej usługi ani nie upoważnia do zmiany umowy.</p>
+<a class="btn" href="/#kontakt">Wyślij fakturę do oceny</a></div>
+<p class="small" style="margin-top:24px">Oszczędności nie są gwarantowane. Ocena może wskazać brak podstaw do zmian. Raport nie jest poradą prawną ani podatkową.</p>
+</div></div></main>
+<footer class="footer"><div class="container"><p><strong>Verity Energia</strong> — Niezależne doradztwo. Mierzalne oszczędności.</p></div></footer>
+</body></html>
